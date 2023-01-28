@@ -1,11 +1,8 @@
-import { TodoForm } from "./components";
+import { router } from "./router";
+import { RouterProvider } from "react-router-dom";
 
-function App() {
-  return (
-    <div>
-      <TodoForm title="Todo list" />
-    </div>
-  );
-}
+const App = () => {
+  return <RouterProvider router={router} />;
+};
 
 export default App;
